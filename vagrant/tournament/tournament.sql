@@ -7,3 +7,17 @@
 -- these lines here.
 
 
+DROP TABLE IF EXISTS players;
+DROP TABLE IF EXISTS scores;
+
+CREATE TABLE players (
+    id SERIAL UNIQUE,
+    name VARCHAR(50)
+);
+
+CREATE TABLE scores (
+    id SERIAL,
+    wins SERIAL,
+    matches SERIAL
+);
+
